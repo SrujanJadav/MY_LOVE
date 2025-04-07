@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY LOVE</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: white;
+      overflow: hidden;
+      filter: blur(15px);
+      opacity: 0.3;
+      transition: filter 2s ease, opacity 5s ease;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 100px; 
+      color: rgb(146, 22, 22);
+      animation: growKiss 4s ease-out forwards;
+      transform-origin: center center; 
+      z-index: 1;
+    }
+
+    @keyframes growKiss {
+      0% {
+        font-size: 100px;
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        font-size: 1200px;
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    body.visible {
+      filter: blur(0);
+      opacity: 1;
+    }
+    
+    video{
+  position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+}
+  </style>
+</head>
+<body>
+  <a href= " " target="mainFrame" >💋</a> <video src="9f36540173df58d7946faf1d18374e1f.mp4"
+  autoplay
+  muted
+  loop
+  playsinline
+  type="video/mp4"></video>
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("visible");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LOVE</title>
+    <style>
+                  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: white;
+      filter: blur(15px);
+      opacity: 0.3;
+      transition: filter 2s ease, opacity 5s ease;
+    }
+
+a{
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:50px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    margin: 300px;
+    font-weight: 400;
+    z-index: 1;
+}
+body.visible {
+      filter: blur(0);
+      opacity: 1;
+    }
+video{
+  position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+}
+/* audio {
+      display: none;
+    } */
+    </style>
+</head>
+<body>
+  <a href="medha1.html" target="mainFrame">❤️ MEDHA ❤️</a>
+  
+  <video src="054e87e5293706d018b37c9f1928109f.mp4"
+  autoplay
+  muted
+  loop
+  playsinline
+  type="video/mp4"></video>
+  <!-- <audio id="bg-music" autoplay loop>
+    <source src="slowdance.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio> -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("visible");
+    });
+  </script>
+</body> 
+</html>
